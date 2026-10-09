@@ -154,7 +154,7 @@ void MandelbrotViewer::handleZoom(double scrollDistance, sf::Vector2i mousePosit
     // scale the world boundaries around the mouse position
     mMinPointWorld = mouseWorld + (mMinPointWorld - mouseWorld) * worldViewFactor;
     mMaxPointWorld = mouseWorld + (mMaxPointWorld - mouseWorld) * worldViewFactor;
-
+    
 }
 
 void MandelbrotViewer::handleWindowResize(sf::Vector2u newSize)  // newSize is in window coords.

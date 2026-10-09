@@ -1,1 +1,12 @@
 Answer written questions here:
+
+1. Starting with a low iteration count makes rendering faster,  so the program can respond to 
+user input more quickly. Higher iteration counts take longer to calculate for each pixel, which 
+makes the program less responsive.
+
+2. We can divide the image into sections and assign each section to a different core to
+calculate at the same time. Once all sections are finished then the computer can combine
+the results into the final image. 
+
+3. It would make the image look smoother. However, rendering would then take longer 
+because we would need to caluclate 4 samples instead of one for every pixel. 
